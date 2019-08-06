@@ -1,18 +1,10 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Box class="box" :pose="isVisible ? 'visible' : 'hidden'" />
+
+<!--   components: {
+    Box: posed.div({
+      visible: { opacity: 1 },
+      hidden: { opacity: 0 }
+  })
+} -->
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
-</script>
